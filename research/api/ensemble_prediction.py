@@ -5,7 +5,7 @@ import pandas as pd
 import json
 from sklearn.metrics import roc_auc_score
 class EnsemblePredictionAPI:
-    def __init__(self, folder_path='models/'):
+    def __init__(self, folder_path='api/models/'):
         """ Инициализирую папку с моделями, их число и уникальные имена """
         self.folder_path = folder_path
         self.models, self.model_names, self.n_folds = self.load_all_models()
